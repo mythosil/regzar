@@ -67,8 +67,11 @@ func doVolume(c *cli.Context) {
 
 	switch argAction {
 	case "up":
+		sendRemoteRequest("40bf1a")
 	case "down":
+		sendRemoteRequest("40bf1e")
 	case "mute":
+		sendRemoteRequest("40bf10")
 	}
 }
 
