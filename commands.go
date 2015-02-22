@@ -48,6 +48,14 @@ func doChannel(c *cli.Context) {
 		os.Exit(1)
 	}
 
+	if argChannel == "prev" {
+		sendRemoteRequest("40bf1f")
+		return
+	} else if argChannel == "next" {
+		sendRemoteRequest("40bf1b")
+		return
+	}
+
 	ch, err := strconv.Atoi(argChannel)
 	if err != nil {
 		panic(err)

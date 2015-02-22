@@ -9,6 +9,8 @@ Remote control for REGZA
 
 ```
 $ regzar channel 3
+$ regzar channel prev
+$ regzar channel next
 ```
 
 #### Volume up/down/mute
